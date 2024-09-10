@@ -1,0 +1,65 @@
+button {
+
+    width: auto !important;
+}
+
+#logo {
+    padding: 0px !important;
+    width: 200px !important;
+
+}
+
+@media (max-width: 780px) {
+    #radio{
+
+        margin-top: 1vmax;
+        margin-left: 0vmax !important;
+
+    }
+    #search{
+        margin-left: 0rem !important;
+    }
+
+
+  
+
+  }
+
+#radio{
+    text-align: center !important;
+    font-weight: 500;
+    color: white;
+    padding: 8px 10px;
+    margin-left: 2vmax;
+    border-radius: 5px;
+    background-color: #3FB773 !important;
+}
+
+.nav a{
+    text-decoration: none;
+    font-weight: 500 !important;
+    color: black !important;
+
+    padding: 8px 30px !important;
+    font-size: 16px !important;
+}
+
+a{
+    font-size: 14px !important;
+    text-decoration: none !important;
+}
+
+#content{
+    display: contents;
+}
+
+.Register_btn{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+
+        width: 281px;
+}
+
+/* .navbar-expand-lg .navbar-collapse {
+    margin-left: 5vmax;} */

@@ -1,0 +1,138 @@
+.mobile-menu .open{
+    background: red;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 300px;
+    padding-right: 30px;
+    max-width: 100%;
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+    z-index: 999999;
+}
+@media only screen and (max-width: 1749px) {
+    .main-header .main-menu {
+        max-width: 1362px !important;
+        margin: 0 auto;
+        float: none;
+    }
+}
+.register-fields{
+    display: flex;
+    gap: 10%;
+}
+
+#register-form{
+    max-width: 70% !important;
+}
+
+#logo{
+    background-color: darkblue;
+    /* height: 100px; */
+    width: 200px;
+}
+
+#job-btn{
+    width: max-content;
+    height: max-content;
+    color: red;
+    background-color: transparent;
+}
+.Toastify__close-button {
+    margin: 0;  /* Ensure no extra margins are added */
+    padding: 0;
+    width: max-content;
+    background-color: transparent;
+  }
+
+  .Toastify__close-button:hover{
+    background-color: transparent;
+
+  }
+
+.add-btn{
+    height: max-content;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(55, 136, 55);
+}
+
+@media only screen and (max-width: 499px) {
+    .main-header .menu-right-content li:last-child {
+        display: initial !important;
+    }
+    #register-form{
+        max-width: 98% !important;
+    }
+
+    #add-job-responsive{
+        display: block !important;
+    }
+}
+
+
+#register-form{
+    /* background: none; */
+
+}
+
+.Register{
+    /* background-image: url(https://plus.unsplash.com/premium_photo-1701192799526-1a042fa6bdba?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: #F0E6E0;
+    color: white;
+}
+
+.login{
+    background-color: #F0E6E0;
+}
+
+.register_heading{
+    /* text-decoration:underline !important; */
+    font-size: 3rem;
+    font-weight: 700;
+    color: #3FB773;
+    text-shadow: 2px 2px 2px rgb(83, 83, 83);
+}
+
+.btn1 {
+    width: 100%;
+    height: 40px;
+    border: none;
+    color: white;
+    margin-top: 1vmax;
+    padding: 0px 25px;
+    background-color: #3FB773;
+    border-radius: 5px;
+    /* box-shadow: inset 0 0 0 0  yellow; */
+    transition: ease-out 0.3s;
+    font-size: 1rem;
+    outline: none;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 1vmax;
+
+}
+
+.btn1:hover {
+    box-shadow: inset 200px 0 0 0 black;
+    cursor: pointer;
+    color: #fff;
+}
+
+.apply-table th{
+    text-align: center;
+    padding: 15px 0px !important;
+
+}
+
+.apply-table td{
+    text-align: center;
+    padding: 15px 0px !important;
+
+}

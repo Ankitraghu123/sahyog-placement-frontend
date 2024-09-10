@@ -1,0 +1,105 @@
+.edit-profile-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .edit-profile-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .edit-profile-form input{
+    margin-bottom: 1vmax;
+  }
+  .edit-profile-form select{
+    margin-bottom: 1vmax;
+  }
+
+  .edit-profile-form textarea{
+    margin-bottom: 1vmax;
+  }
+  .edit-profile-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="password"],
+  .form-group input[type="date"],
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  .form-group textarea {
+    height: 100px;
+  }
+
+  .form-group input[type="file"] {
+    padding: 5px;
+  }
+
+  .form-group .radio-group {
+    display: flex;
+    gap: 20px;
+  }
+
+  .form-group .radio-group label {
+    display: flex;
+    align-items: center;
+  }
+
+  .radio-group input {
+    margin-right: 5px;
+  }
+
+  .submit-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+
+  .submit-button:hover {
+    background-color: #218838;
+  }
+
+  .login-link {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .login-link a {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  .login-link a:hover {
+    text-decoration: underline;
+  }
