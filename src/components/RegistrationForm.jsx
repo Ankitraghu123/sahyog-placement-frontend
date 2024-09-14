@@ -145,7 +145,7 @@ useEffect(()=>{
                 required
                 className="w-100 border p-2"
               >
-                <option value="Male">select gender</option>
+                <option value="select gender">select gender</option>
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
                 <option value="Others">Others</option>
@@ -153,20 +153,8 @@ useEffect(()=>{
             </div>
           </div>
           <div className="d-flex">
+            
             <div className="form-group w-100 mr-3">
-              <label htmlFor="password">Password</label>
-              <input
-                type="password"
-                name="password"
-                id="password"
-                placeholder="************"
-
-                value={formData.password}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            <div className="form-group w-100">
               <label htmlFor="email">Email</label>
               <input
                 type="email"
@@ -175,6 +163,19 @@ useEffect(()=>{
                 placeholder="Enter your email.."
 
                 value={formData.email}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div className="form-group w-100">
+              <label htmlFor="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="************"
+
+                value={formData.password}
                 onChange={handleChange}
                 required
               />
