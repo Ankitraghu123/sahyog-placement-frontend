@@ -104,7 +104,7 @@ const Footer = () => {
                         <a href="mailto:info@sahyogplacement.com">info@sahyogplacement.com</a>
                       </li>
                       <button className="btn text-center bg-white px-4 mt-3" >
-                        <a style={{ color: '#462B34'}} href="https://sahyog-placement-dashboard-beta.vercel.app/#/">A Login</a>
+                        <a style={{ color: '#462B34'}} href="https://sahyogplacement.vercel.app/#/">A Login</a>
                       </button>
                     </ul>
                   </div>
