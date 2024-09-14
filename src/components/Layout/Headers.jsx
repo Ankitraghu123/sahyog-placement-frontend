@@ -7,6 +7,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import './Header.css';
 import { Button, Col, Row } from 'react-bootstrap';
 import { isLoggedIn } from '../../utils/config';
+import Logo from '../../assets/logo.png'
 
 function Headers() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -40,7 +41,7 @@ function Headers() {
       <Container>
         <Col xs={6} md={3}>
           <Navbar.Brand href="/" id="logo">
-            <img src="https://www.sahyogplacement.com/assets/img/logo.png" alt="" />
+            <img src={Logo} alt="" />
           </Navbar.Brand>
         </Col>
         <Col id="content" xs={6} md={9}>

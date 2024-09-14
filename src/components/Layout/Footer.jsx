@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaFacebookF, FaGooglePlusG, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -14,12 +15,12 @@ const Footer = () => {
                     <h3>Office</h3>
                   </div>
                   <div className="text">
-                    <p>
+                    {/* <p>
                       It is a long established fact that a reader will distracted by the readable ...{' '}
                       <i className="fas fa-arrow-up"></i>
-                    </p>
+                    </p> */}
                     <p>
-                      United States <br /> 866 Wilshire, 2nd Street <br /> Los Angeles 90024.
+                    Infront of, Flat No.-301 Third Floor, HIG-34 Sahara Homes Shivaji Nagar,Bhopal, Madhya Pradesh 462016
                     </p>
                   </div>
                   <ul className="social-links clearfix">
@@ -27,25 +28,20 @@ const Footer = () => {
                       <h5>Connected:</h5>
                     </li>
                     <li>
-                      <a href="">
-                        <i className="fab fa-facebook-f"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <i className="fab fa-twitter"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <i className="fab fa-google-plus-g"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <i className="fab fa-youtube"></i>
-                      </a>
-                    </li>
+        <a className="facebook" href="https://www.facebook.com/sahyogplacementgroup/" target="_blank" rel="noopener noreferrer">
+          <FaFacebookF /> 
+        </a>
+      </li>
+      <li>
+        <a className="twitter" href="https://twitter.com/sahyog5415" target="_blank" rel="noopener noreferrer">
+          <FaTwitter /> 
+        </a>
+      </li>
+      <li>
+        <a className="linkedin" href="https://www.linkedin.com/in/sahyog-placement-46135b172/" target="_blank" rel="noopener noreferrer">
+          <FaLinkedinIn /> 
+        </a>
+      </li>
                   </ul>
                 </div>
               </div>
@@ -127,7 +123,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="footer-subscribe">
+        {/* <div className="footer-subscribe">
           <div className="text centred">
             <h3>Subscribe Us & Get Our Recruitment Updates in Your Inbox</h3>
           </div>
@@ -139,8 +135,8 @@ const Footer = () => {
               </button>
             </div>
           </form>
-        </div>
-        <div className="footer-bottom clearfix">
+        </div> */}
+        {/* <div className="footer-bottom clearfix">
           <div className="copyright pull-left">
             <p>
               &copy; 2020 <a href="">Eazy Recruitz</a>, All Rights Reserved.
@@ -157,12 +153,12 @@ const Footer = () => {
               <a href="">Site Map</a>
             </li>
           </ul>
-        </div>
+        </div> */}
       </div>
       {/* Scroll to top */}
-      <button className="scroll-top scroll-to-target" data-target="html">
-        <i className="flaticon-up-arrow-1"></i>Top
-      </button>
+      {/* <button className="scroll-top scroll-to-target" data-target="html">
+        <i className="flaticon-up-arrow-1">go top</i>Top
+      </button> */}
     </footer>
   );
 };

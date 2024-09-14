@@ -76,7 +76,8 @@ const Contact = () => {
                                             <figure className="icon-box"><img src={iconLocation} alt="Location" /></figure>
                                             <div className="inner">
                                                 <h4>Location</h4>
-                                                <p>India <br />Sahyog Placement Office<br />Mumbai, Maharashtra 400001</p>
+                                                <p>Bhopal, Madhya Pradesh, India <br /> Infront of, Flat No.-301 Third Floor, HIG-34 Sahara Homes Shivaji Nagar
+                                                </p>
                                             </div>
                                         </li>
                                         <li>
