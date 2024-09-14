@@ -110,7 +110,7 @@ const Footer = () => {
     target="_blank"
     rel="noopener noreferrer"
   >
-    A Login
+    Employee Login
   </a>
 </button>
                     </ul>
