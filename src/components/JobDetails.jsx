@@ -4,7 +4,7 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import { applyJob, getSingleJob, isAlreadyApplied } from "../features/job/jobSlice";
 import { isLoggedIn } from "../utils/config";
 import { toast } from "react-toastify";
-import logo from '../assets/images/resource/logo-7.png';
+import logo from '../assets/images/resource/job-logo-2.png';
 const JobDetails = () => {
   const params = useParams()
   const id = params.id
@@ -62,7 +62,7 @@ const JobDetails = () => {
                 <div className="upper-box">
                   <div className="inner-box">
                     <figure className="company-logo">
-                      <img src={logo} alt="Company Logo" />
+                      <img className="mb-1"  src={logo} alt="Company Logo" />
                     </figure>
                     <div className="inner">
                       {/* <span>Direct Hire</span> */}

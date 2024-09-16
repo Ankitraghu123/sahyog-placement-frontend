@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getAllJob } from "../features/job/jobSlice";
 import { Link } from "react-router-dom";
-import logo from '../assets/images/resource/logo-1.png';
+import logo from '../assets/images/resource/job-logo.png';
 const JobOpenings = () => {
   const dispatch = useDispatch()
   const [searchRole, setSearchRole] = useState("");
@@ -295,8 +295,8 @@ const JobPost = ({ posted, title, location, salary, experience, logo ,id}) => {
       </div>
       <div className="job-inner clearfix">
         <div className="job-title">
-          <figure className="company-logo ">
-            <img src={logo} alt={title} />
+          <figure className="company-logo">
+            <img className="mb-2" src={logo} alt={title} />
           </figure>
          <Link to={`/job-details/${id}`}>
          <h3 className="text-capitalize text-black">{title}</h3>
