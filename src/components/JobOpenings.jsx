@@ -13,7 +13,9 @@ const JobOpenings = () => {
   },[])
   const jobState = useSelector(state => state.job?.jobs)
 
-  const filteredJobs = jobState?.filter((job) => {
+  const pendingJobs = jobState?.filter(job => job.status === "Pending");
+
+  const filteredJobs = pendingJobs?.filter((job) => {
     return (
       job.role.toLowerCase().includes(searchRole.toLowerCase()) &&
       job.jobLocation.toLowerCase().includes(searchLocation.toLowerCase())
@@ -138,6 +140,7 @@ const JobOpenings = () => {
                   location={jobDetails.jobLocation}
                   salary={jobDetails.salary}
                   experience={jobDetails.experienceRequired}
+                  deadline={jobDetails.deadline}
                   logo={logo}
                   id={jobDetails._id}
                 />
@@ -275,7 +278,7 @@ const JobOpenings = () => {
   );
 };
 
-const JobPost = ({ posted, title, location, salary, experience, logo ,id}) => {
+const JobPost = ({ posted, title, location, salary, experience, logo ,id,deadline}) => {
 
   return (
     <div className="single-job-post">
@@ -306,14 +309,21 @@ const JobPost = ({ posted, title, location, salary, experience, logo ,id}) => {
             {location}
           </p>
         </div>
-        <div className="salary-box">
-          <span>Salary</span>
-          <p>{salary}</p>
+        <div className="salary-box d-flex gap-5">
+          <div><span>Salary</span>
+          <p>{salary}</p></div>
+
+          <div><span>Deadline</span>
+          <p>{deadline}</p></div>
         </div>
         <div className="experience-box">
           <span>Experience Need</span>
           <p>{experience}</p>
+         
         </div>
+        {/* <div className="experience-box">
+         
+        </div> */}
         <div className="apply-btn">
           <Link to={`/job-details/${id}`}>Apply</Link>
 
